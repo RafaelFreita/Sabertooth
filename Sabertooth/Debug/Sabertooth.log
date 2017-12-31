@@ -1,0 +1,3 @@
+﻿  main.cpp
+main.obj : error LNK2019: unresolved external symbol __imp__glewInit@0 referenced in function _main
+C:\Users\Rafael\Documents\Projects\Sabertooth\Debug\Sabertooth.exe : fatal error LNK1120: 1 unresolved externals
