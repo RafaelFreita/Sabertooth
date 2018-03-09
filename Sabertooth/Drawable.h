@@ -6,19 +6,27 @@
 class Drawable
 {
 
-private:
+protected:
 	GLuint VAO, VBO;
+
+	GLfloat *vertices;
+	int verticesQtd;
 
 public:
 	Drawable();
 	~Drawable();
 
-	GLuint getVAO() { return VAO; }
-	GLuint getVBO() { return VBO; }
+	virtual void Create() = 0;
+
+	void BindVertices();
+
+	void SetVertices( GLfloat *vertices, int verticesQtd );
 
 	void Draw();
-
 	void Delete();
+
+	GLuint getVAO() { return VAO; }
+	GLuint getVBO() { return VBO; }
 
 };
 
