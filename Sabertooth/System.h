@@ -24,8 +24,6 @@
 #include "AssetManager.h"
 #include "Time.h"
 
-#include "Cube.h"
-
 class System
 {
 private:
