@@ -2,6 +2,8 @@
 
 This is a repo for studying purposes only.
 
-## Todo:
+## General Information
 
-* Change the drawable method Draw to a virtual method.
+Contains a base project using OpenGL, GLEW and GLFW to build projects upon.
+
+SOIL and GLM, as well as classes for Shader compiling and Time managing, are already included.
