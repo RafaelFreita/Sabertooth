@@ -69,6 +69,8 @@ int System::SystemSetup()
 	coreShader = Shader( "Shaders/Core/core.vert", "Shaders/Core/core.frag" );
 	coreShader.Use();
 
+	Time::Initialize();
+
 	return EXIT_SUCCESS;
 }
 
@@ -90,6 +92,7 @@ void System::Run()
 		-0.5f,  0.5f, 0.0f,   0.0f, 1.0f, // Top Left
 		 0.5f,  0.5f, 0.0f,   1.0f, 1.0f, // Top Right
 	};
+
 	GLuint VBO, VAO;
 	glGenVertexArrays( 1, &VAO );
 	glGenBuffers( 1, &VBO );
@@ -112,7 +115,7 @@ void System::Run()
 	
 	while ( !glfwWindowShouldClose( window ) ) {
 
-		Time::Instance()->Update();
+		Time::Update();
 
 		glfwPollEvents();
 
@@ -144,9 +147,6 @@ void System::Run()
 
 void System::Finish()
 {
-	//TODO: Remove
-	//glDeleteTextures( 2, textures );
-
 	coreShader.Delete();
 
 	glfwTerminate();

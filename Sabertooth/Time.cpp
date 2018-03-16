@@ -1,17 +1,10 @@
 #include "Time.h"
 
-Time* Time::instance = 0;
-
-Time::Time()
+void Time::Initialize()
 {
 	timeStart = std::chrono::high_resolution_clock::now();
 	timeNewFrame = std::chrono::high_resolution_clock::now();
 	timeLastFrame = std::chrono::high_resolution_clock::now();
-}
-
-
-Time::~Time()
-{
 }
 
 void Time::Update()
@@ -22,12 +15,4 @@ void Time::Update()
 	deltaTime = std::chrono::duration_cast< std::chrono::duration<float> >( timeNewFrame - timeLastFrame ).count();
 
 	timeLastFrame = timeNewFrame;
-}
-
-Time * Time::Instance()
-{
-	if ( instance == 0 ){
-		instance = new Time();
-	}
-	return instance;
 }

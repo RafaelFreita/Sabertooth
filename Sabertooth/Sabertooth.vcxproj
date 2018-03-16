@@ -124,6 +124,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <ClCompile Include="AssetManager.cpp" />
+>>>>>>> 0752dd98c55304a25beed871fcdc52f01cfdd927
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="System.cpp" />

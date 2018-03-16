@@ -30,6 +30,12 @@
     <ClCompile Include="System.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
+=======
+    <ClCompile Include="AssetManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+>>>>>>> 0752dd98c55304a25beed871fcdc52f01cfdd927
     <ClCompile Include="Time.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
