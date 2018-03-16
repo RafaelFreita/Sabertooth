@@ -69,8 +69,6 @@ int System::SystemSetup()
 	coreShader = Shader( "Shaders/Core/core.vert", "Shaders/Core/core.frag" );
 	coreShader.Use();
 
-	Time::Initialize();
-
 	return EXIT_SUCCESS;
 }
 
@@ -114,8 +112,6 @@ void System::Run()
 	glBindVertexArray( 0 ); // Unbind VAO
 	
 	while ( !glfwWindowShouldClose( window ) ) {
-
-		Time::Update();
 
 		glfwPollEvents();
 
