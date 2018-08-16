@@ -17,6 +17,5 @@ SOIL and GLM, as well as a class for Shader compiling, are already included.
 
 ### Windows SDK error
 
-1. At the right hand side under "Solution Explorer" 
-2. Right-click the solution and select "Retarget Solution"
-3. Select your Windows SDK
+1. Under "Solution Explorer", right-click the solution and select "Retarget Solution"
+2. Select your Windows SDK
