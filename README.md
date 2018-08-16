@@ -15,7 +15,7 @@ SOIL and GLM, as well as a class for Shader compiling, are already included.
 3. Go to the folder where you downloaded this project
 4. Select "Sabertooth.sln"
 
-### If you have a Windows SDK error
+### Windows SDK error
 
 1. At the right hand side under "Solution Explorer" 
 2. Right-click the solution and select "Retarget Solution"
