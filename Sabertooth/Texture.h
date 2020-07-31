@@ -14,6 +14,7 @@ private:
 	GLshort textureNum;
 
 public:
+	Texture();
 	Texture(char* path, char* textureUniformName, GLuint shaderProgram, GLint textureNum);
 	~Texture();
 

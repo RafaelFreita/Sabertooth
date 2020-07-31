@@ -2,6 +2,10 @@
 
 
 
+Texture::Texture() : textureID(NULL), textureLocation(NULL), textureNum(NULL)
+{
+}
+
 Texture::Texture(char* path, char* textureUniformName, GLuint shaderProgram, GLint textureNum)
 {
 	this->textureNum = textureNum;

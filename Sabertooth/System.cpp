@@ -76,7 +76,7 @@ void System::Run()
 {
 
 	coreShader.Use();
-	coreShader.LoadTexture("bin/Images/woodTexture.jpg", "texture1", "woodTexture");
+	coreShader.LoadTexture("images/woodTexture.jpg", "texture1", "woodTexture");
 
 	GLfloat vertices[] =
 	{
