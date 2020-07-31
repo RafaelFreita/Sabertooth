@@ -1,10 +1,10 @@
-# Sabertoooth
+# Sabertooth
 
 This is a repo for studying purposes only.
 
 ## General Information
 
-Contains a base project using OpenGL, GLEW and GLFW to build projects upon.
+Sabertooth is a template project using OpenGL, GLEW, and GLFW.
 
 SOIL and GLM, as well as a class for Shader compiling, are already included.
 
@@ -17,5 +17,5 @@ SOIL and GLM, as well as a class for Shader compiling, are already included.
 
 ### Windows SDK error
 
-1. Under "Solution Explorer", right-click the solution and select "Retarget Solution"
+1. Under "Solution Explorer," right-click the solution and select "Retarget Solution."
 2. Select your Windows SDK
