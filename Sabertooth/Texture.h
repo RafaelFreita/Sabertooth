@@ -14,10 +14,8 @@ private:
 	GLshort textureNum;
 
 public:
-	Texture();
+	Texture(char* path, char* textureUniformName, GLuint shaderProgram, GLint textureNum);
 	~Texture();
-
-	void Load( char* path, char* textureUniformName, GLuint shaderProgram, GLint textureNum );
 
 	GLuint GetTextureId() { return textureID; }
 	GLshort GetTextureNum() { return textureNum; }

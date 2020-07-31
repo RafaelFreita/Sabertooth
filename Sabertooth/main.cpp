@@ -7,13 +7,13 @@ int main() {
 
 	System system;
 
-	if ( system.GLFWInit() != 0 ){
+	if (system.GLFWInit() != 0) {
 		return EXIT_FAILURE;
 	}
-	if ( system.OpenGLSetup() != 0 ){
+	if (system.OpenGLSetup() != 0) {
 		return EXIT_FAILURE;
 	}
-	if ( system.SystemSetup() != 0 ){
+	if (system.SystemSetup() != 0) {
 		return EXIT_FAILURE;
 	}
 
@@ -21,5 +21,5 @@ int main() {
 
 	system.Finish();
 
-	return 0;
+	return EXIT_SUCCESS;
 }
